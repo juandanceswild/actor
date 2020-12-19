@@ -1,0 +1,319 @@
+html, body, a, p, span, * {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+a {
+  transition: opacity 0.2s cubic-bezier(.51,.29,.69,1.1);
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
+
+.noborder {
+  border: none;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 760px) {
+  html, body, a, p, span, * {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10%)
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.striked {
+  text-decoration: line-through;
+  font: inherit;
+}
+
+.outer-margin-mobile {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 760px) {
+  .outer-margin-mobile {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .outer-margin-desktop {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .max-width-desktop {
+    max-width: 1440px;
+    margin: auto;
+ }
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.main-wrapper {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+.title {
+  white-space: nowrap;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: -0.095em;
+  margin-bottom: 60px;
+  display: inline-block;
+  animation: sliding 20s linear infinite;
+}
+
+.title-spacer {
+  margin-right: 10px;
+}
+
+.headshot-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin-bottom: 50px;
+}
+
+.headshot-carousel__item {
+  width: calc(100% - 32px);
+  flex-basis: auto;
+  flex-shrink: 0;
+  margin: 0 8px
+}
+
+.headshot-carousel__item:first-of-type {
+  margin-left: 0;
+}
+
+.main-description {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;;
+  text-align: center;
+  padding: 0 30px;
+  margin-bottom: 35px;
+}
+
+.link-bar {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.link-bar__link {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+  margin-right: 5px;
+}
+
+.link-bar__link:last-child {
+  margin-right: 0;
+}
+
+.vimeo-embed-box {
+ width: 100%;
+ padding-top: 52%;
+ position: relative;
+ margin-bottom: 100px;
+}
+
+.vimeoIframe {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: calc(100% + 1px);
+  height: 100%;
+}
+
+.news-box__row {
+  border-bottom: 3px solid #000000;
+  margin-bottom: 50px;
+}
+
+.news-box__row:last-child {
+  margin-bottom: 100px;
+  border: none;
+}
+
+.news-box__box {
+  margin-bottom: 50px;
+}
+
+.news-box__caption {
+  text-align: center;
+  display: block;
+  position: relative;
+  top: -10px;
+}
+
+.resume {
+  margin-bottom: 100px;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.resume-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 18px;
+}
+
+.resume-email {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
+
+.resume-section__title {
+  text-decoration: underline;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.resume-item {
+  margin-bottom: 24px;
+}
+
+.resume-item__title {
+  font-weight: 600;
+}
+
+.resume-print-link {
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.resume-print-link img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 760px) {
+
+  .title {
+    font-size: 144px;
+    line-height: 168px;
+    letter-spacing: -0.095em;
+    /* margin-bottom: 60px; */
+  }
+
+  .headshot-carousel__item {
+    flex-shrink: 1;
+    margin: 0;
+    width: auto;
+    flex-basis: auto;
+  }
+
+  .title-spacer {
+    margin-right: 20px;
+  }
+
+  .main-description {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 40px;
+  }
+
+  .link-bar {
+    margin-bottom: 160px;
+  }
+
+  .link-bar__link {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  
+  .vimeo-embed-box {
+    margin-bottom: 160px;
+  }
+
+  .news-box {
+    margin-top: 40px;
+  }
+
+  .news-box__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .news-box__box {
+    flex-basis: calc(33.33334% - 40px);
+  }
+
+  .resume-section__title {
+    margin-bottom: 50px;
+  }
+
+  .resume-item {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  .resume-item:last-child {
+    margin-bottom: 80px;
+  }
+
+  .resume-item__title {
+    flex-basis: 45%;
+    font-weight: 400;
+    padding-right: 20px;
+  }
+
+  .resume-item__description,
+  .resume-item__related {
+    flex-basis: calc(55%/2);
+    padding-right: 30px;
+  }
+
+  .skills {
+    flex-basis: 100%;
+    padding-right: 0;
+  }
+
+}
