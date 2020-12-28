@@ -123,6 +123,7 @@ img {
   text-decoration: none;
   border-bottom: 1px solid #000000;
   margin-right: 5px;
+  font-size: 16px;
 }
 
 .link-bar__link:last-child {
@@ -254,6 +255,7 @@ img {
 .link-bar__link {
   font-size: 36px;
   line-height: 42px;
+  font-size: 20px;
 }
 
 .vimeo-embed-box {

@@ -140,6 +140,7 @@ img {
   text-decoration: none;
   border-bottom: 1px solid #000000;
   margin-right: 5px;
+  font-size: 16px;
 }
 
 .link-bar__link:last-child {
