@@ -84,9 +84,14 @@ img {
   font-size: 80px;
   line-height: 94px;
   letter-spacing: -0.095em;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   display: inline-block;
   animation: sliding 20s linear infinite;
+}
+
+.title.main {
+  font-size: 70px;
+  line-height: 76px;
 }
 
 .title-spacer {
@@ -241,10 +246,15 @@ img {
 @media screen and (min-width: 760px) {
 
   .title {
-    font-size: 144px;
-    line-height: 168px;
+    font-size: 124px;
+    line-height: 130px;
     letter-spacing: -0.095em;
     /* margin-bottom: 60px; */
+  }
+
+  .title.main {
+    font-size: 94px;
+    line-height: 116px;
   }
 
   .headshot-carousel__item {
@@ -297,12 +307,12 @@ img {
   }
 
   .resume-section__title {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .resume-item {
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
 
   .resume-item:last-child {
