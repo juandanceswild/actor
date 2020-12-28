@@ -146,11 +146,19 @@ img {
   margin-right: 0;
 }
 
+.video-type {
+  margin-bottom: 18px;
+}
+
+.videos {
+  margin-bottom: 80px;
+}
+
 .vimeo-embed-box {
  width: 100%;
  padding-top: 56%;
  position: relative;
- margin-bottom: 100px;
+ margin-bottom: 40px;
 }
 
 .vimeoIframe {
@@ -288,8 +296,33 @@ img {
     line-height: 42px;
   }
   
-  .vimeo-embed-box {
+  /* .vimeo-embed-box {
     margin-bottom: 160px;
+  } */
+
+  .videos {
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+  .video-item {
+    flex-basis: auto;
+    width: 50%;
+    /* padding-top: 28%; */
+  }
+
+  .vimeo-embed-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0
+   }
+   
+  .vimeoIframe {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: calc(100% + 1px);
+    height: 100%;
   }
 
   .news-box {
