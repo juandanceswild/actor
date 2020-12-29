@@ -294,9 +294,13 @@ img {
   flex-basis: calc(55%/2);
 }
 
-.resume-item__description {
-  padding-right: 30px;
+.resume-item__description.expand {
+  flex-basis: 55%;
 }
+
+/* .resume-item__description {
+  padding-right: 30px;
+} */
 
 .skills {
   flex-basis: 100%;
@@ -411,17 +415,18 @@ img {
     margin-bottom: 80px;
   }
 
-  /* .resume-item__title {
-    flex-basis: 45%;
-    font-weight: 400;
-    padding-right: 20px;
-  } */
-
-  /* .resume-item__description,
+  .resume-item__description,
   .resume-item__related {
     flex-basis: calc(55%/2);
-    padding-right: 30px;
-  } */
+  }
+
+  .resume-item__description.expand {
+    flex-basis: calc(55%/2);
+  }
+  
+  .resume-item__description {
+    padding-right: 60px;
+  }
 
   .skills {
     flex-basis: 100%;
